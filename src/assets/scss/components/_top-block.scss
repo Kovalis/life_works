@@ -1,0 +1,62 @@
+.top-block {
+  box-shadow: 2px 2px 5px rgba(20, 29, 61, 0.15), -2px -2px 5px rgba(20, 29, 61, 0.15);
+
+  @include breakpoint(small only) {
+    padding: 30px 0;
+    border-radius: 15px;
+  }
+
+  @include breakpoint(medium down) {
+    text-align: center;
+  }
+
+  @include breakpoint(medium) {
+    padding: 60px 0 64px;
+    border-radius: 30px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include breakpoint(small only) {
+      font-size: 24px;
+    }
+
+    @include breakpoint(medium) {
+      font-size: 36px;
+      text-align: left;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(medium down) {
+      padding-bottom: 20px;
+      align-items: center;
+    }
+
+    @include breakpoint(large) {
+      height: 100%;
+      padding-top: 64px;
+      padding-left: 80px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    color: $grey;
+    margin-bottom: 20px;
+    max-width: 365px;
+  }
+
+  &__main-btn {
+    @include breakpoint(medium) {
+      padding: 20px;
+      min-width: 265px;
+    }
+  }
+}

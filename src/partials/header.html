@@ -1,0 +1,51 @@
+<header class="main__header header">
+  <div class="grid-container">
+    <div class="header__wrap">
+      <div class="header__flex">
+        <div
+          class="header__menu hide-for-large"
+          data-responsive-toggle="example-menu"
+          data-hide-for="large"
+        >
+          <button class="header__burger js-header__burger" type="button" data-toggle="example-menu">
+            <span class="header__burger-line header__burger-line_first"></span>
+            <span class="header__burger-line header__burger-line_second"></span>
+            <span class="header__burger-line header__burger-line_third"></span>
+          </button>
+        </div>
+        <img class="logo" src="{{root}}assets/img/logo.svg" alt="" width="53px" height="58px" />
+      </div>
+      <div class="header__flex">
+        <nav class="main-menu">
+          <div class="main-menu__wrap" id="example-menu">
+            <ul class="header__ul dropdown" data-dropdown-menu>
+              <li class="header__li"><a class="header__link" href="#">Главная</a></li>
+              <li class="header__li"><a class="header__link" href="#">О нас</a></li>
+              <li class="header__li header__li_select">
+                <a class="header__link" href="#">Помощь</a>
+                <ul class="menu">
+                  <li><a href="#">Item 1A</a></li>
+                </ul>
+              </li>
+              <li class="header__li header__li_select">
+                <a class="header__link" href="#">Санкт-Петербург</a>
+                <ul class="menu">
+                  <li><a href="#">Item 2A</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a class="header__phone" href="tel:+7 495 967 13 01">+7 495 967 13 01</a>
+        <a class="header__lk" href="#"
+          >Личный кабинет<img
+            class="header__lk-img"
+            src="{{root}}assets/img/lk.svg"
+            alt=""
+            width="28px"
+            height="28px"
+        /></a>
+      </div>
+    </div>
+  </div>
+</header>

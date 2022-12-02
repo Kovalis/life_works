@@ -1,0 +1,146 @@
+<section class="form-block">
+  <div class="grid-container">
+    <h2 class="form-block__title">Уточнить детали</h2>
+    <div class="form-block__small-title">
+      Если вы не нашли ответа на свой вопрос, заполните эту форму, а мы как можно быстрее ответим
+      вам.
+    </div>
+  </div>
+  <div class="form-block__wrap">
+    <div class="grid-container">
+      <div class="form-block__top">
+        <div class="form-block__bg-tabs-links show-for-large">
+          <img
+            class="form-block__bg-tabs-links-item"
+            src="{{root}}assets/img/form-block/tab-header1.png"
+            alt=""
+            width="219px"
+            height="102px"
+            alt=""
+          />
+          <img
+            class="form-block__bg-tabs-links-item"
+            src="{{root}}assets/img/form-block/tab-header1.png"
+            alt=""
+            width="219px"
+            height="102px"
+            alt=""
+          />
+        </div>
+        <ul
+          class="form-block__tabs tabs"
+          data-deep-link="true"
+          data-update-history="true"
+          data-deep-link-smudge="true"
+          data-deep-link-smudge-delay="500"
+          data-tabs
+          id="deeplinked-tabs"
+        >
+          <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">1</a></li>
+          <li class="tabs-title"><a href="#panel2d">2</a></li>
+        </ul>
+      </div>
+
+      <div class="tabs-content" data-tabs-content="deeplinked-tabs">
+        <div class="tabs-panel is-active" id="panel1d">
+          <form action="">
+            <div class="input-item">
+              <span class="input-item__title">ФИО*</span>
+              <input type="text" required />
+            </div>
+            <div class="input-item">
+              <span class="input-item__title">Номер телефона*</span>
+              <input type="text" required />
+            </div>
+            <div class="input-item">
+              <span class="input-item__title">Email*</span>
+              <input type="text" required />
+            </div>
+            <div class="input-item">
+              <label>
+                <span class="input-item__title">Регион*</span>
+                <select id="select" required>
+                  <option value=""></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-block__row-btns">
+              <a class="form-block__refresh" href="#">Очистить</a
+              ><button class="main-btn">далее</button>
+            </div>
+          </form>
+        </div>
+        <div class="tabs-panel" id="panel2d">
+          <form action="">
+            <div class="form-block__row">
+              <div class="form-block__col-8">
+                <div class="input-item">
+                  <span class="input-item__title">Наименование страхового продукта</span>
+                  <label>
+                    <select id="select" required>
+                      <option value=""></option>
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="form-block__col-4">
+                <div class="input-item">
+                  <span class="input-item__title">Номер полиса</span>
+                  <input type="number" placeholder="123456789" />
+                </div>
+              </div>
+            </div>
+            <div class="form-block__row">
+              <div class="form-block__col-8">
+                <div class="input-item">
+                  <label>
+                    <span class="input-item__title">Выберите тему</span>
+                    <select id="select" required>
+                      <option value=""></option>
+                      <option value="volvo">Расторжение страхового полиса</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-item">
+              <span class="input-item__title">Ваше сообщение</span>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Здравствуйте!"></textarea>
+            </div>
+            <div class="form-block__row-bottom">
+              <div class="js-wrap-input-file">
+                <label for="exampleFileUpload" class="main-btn main-btn_file">Выбрать файл</label>
+                <input type="file" id="exampleFileUpload" class="show-for-sr" />
+                <div class="input-file-text js-input-file-text">Файл не выбран</div>
+                <div class="input-file-text">JPG, GIF или PNG. Максимальный размер 1 мб.</div>
+              </div>
+              <div>
+                <div class="form-block__agree-step" data-open="exampleModal1">
+                  <input id="checkbox1" type="checkbox" /><label for="checkbox1"
+                    >Я принимаю <a href="#" target="_blank">условия передачи информации</a></label
+                  >
+                </div>
+                <div class="form-block__row-btns">
+                  <a class="form-block__refresh" href="#">Очистить</a>
+                  <button class="main-btn">отправить</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

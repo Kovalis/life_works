@@ -1,0 +1,21 @@
+.main-form-item {
+  padding-bottom: 30px;
+
+  &__title {
+    display: block;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    color: $text-color;
+  }
+
+  input {
+    margin-bottom: 0;
+
+    &[type="text"],
+    &[type="number"] {
+      box-shadow: 2px 0px 12px rgba(20, 29, 61, 0.12);
+      padding: 14px 24px;
+    }
+  }
+}

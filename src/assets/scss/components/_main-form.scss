@@ -1,0 +1,380 @@
+.main-form {
+  $this: &;
+
+  &__title {
+    padding-top: 45px;
+    margin-bottom: 1em;
+    color: $text-color;
+    text-align: center;
+
+    @include breakpoint(small only) {
+      font-size: 20px;
+    }
+
+    @include breakpoint(medium) {
+      font-size: 24px;
+    }
+  }
+
+  &__middle-title {
+    color: $grey;
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint(small only) {
+      font-size: 16px;
+      margin-bottom: 1em;
+    }
+
+    @include breakpoint(medium) {
+      font-size: 18px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &__title-inner-tab {
+    font-size: 20px;
+    font-weight: 600;
+    color: $text-color;
+    text-align: center;
+    margin-bottom: 62px;
+  }
+
+  &__title-small-inner-tab {
+    color: $text-color;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  &__title-small-inner-tab-text {
+    color: $text-color;
+    font-size: 16px;
+    margin-bottom: 46px;
+  }
+
+  &__title-small-inner-tab-img {
+    margin-right: 9px;
+  }
+
+  &__advantage-wrap {
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    max-width: 565px;
+    margin-left: auto;
+    margin-right: auto;
+    background: $white;
+    box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+    @include breakpoint(small only) {
+      padding: 30px;
+    }
+
+    @include breakpoint(medium) {
+      padding: 86px 100px 90px;
+    }
+
+    &_narrow {
+      @include breakpoint(medium) {
+        padding-left: 82px;
+        padding-right: 82px;
+      }
+    }
+
+    &_wide {
+      display: flex;
+      max-width: 1165px;
+    }
+
+    &_block {
+      display: block;
+    }
+  }
+
+  &__col-wrap {
+    max-width: 265px;
+
+    &_center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &_right {
+      margin-left: auto;
+    }
+
+    &_margin {
+      @include breakpoint(small only) {
+        margin-bottom: 30px;
+      }
+
+      @include breakpoint(medium) {
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  &__tabs {
+    position: relative;
+    z-index: 5;
+
+    background-color: transparent;
+    border: none;
+
+    counter-reset: item;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    &_vertical {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .main-form__tabs-title {
+        flex-grow: 0;
+      }
+    }
+
+    &:after,
+    &::before {
+      content: none;
+    }
+  }
+
+  &__track {
+    position: relative;
+
+    display: block;
+    padding: 2px;
+
+    height: 8px;
+
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(20, 29, 61, 0.15), -2px -2px 5px rgba(20, 29, 61, 0.15);
+  }
+
+  &__track-inner {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 4px;
+
+    background-color: $third-color;
+    border-radius: 4px;
+
+    margin-left: 2px;
+
+    transition: 0.3s width;
+
+    &_complite {
+      width: 100% !important;
+      background-color: $text-color;
+    }
+  }
+
+  &__tab {
+    padding: 0;
+  }
+
+  &__inner-tabs {
+    position: relative;
+
+    display: none;
+    justify-content: space-between;
+
+    background-color: transparent;
+    border: none;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 15px;
+  }
+
+  &__checkbox-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  &__checkbox-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+
+    label {
+      color: $black;
+    }
+  }
+
+  &__tabs-link {
+    position: relative;
+
+    display: flex !important;
+    align-items: center;
+    gap: 34px;
+
+    padding: 0 !important;
+    margin-bottom: 7px;
+
+    font-size: 18px !important;
+    color: $text-color !important;
+
+    &::before {
+      @include font(400, 28px, 1.2);
+      @include flex-center;
+      align-items: center;
+
+      color: $text-color;
+
+      content: counter(item) "";
+      counter-increment: item;
+
+      flex-shrink: 0;
+
+      border: 1px solid $text-color;
+      border-radius: 40px;
+      box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
+      min-width: 47px;
+      min-height: 47px;
+      padding: 5px;
+    }
+
+    &:focus,
+    &[aria-selected="true"] {
+      background-color: transparent !important;
+    }
+  }
+
+  &__tabs-title {
+    position: relative;
+
+    flex-grow: 1;
+
+    pointer-events: none;
+
+    &.is-active {
+      #{$this} {
+        &__tabs-link {
+          &::before {
+            color: $third-color;
+            border-width: 2px;
+            border-color: $third-color;
+          }
+        }
+
+        &__inner-tabs {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &__tabs-title-inner {
+    flex-grow: 1;
+    text-align: right;
+
+    pointer-events: none;
+
+    a {
+      padding: 5px;
+
+      background-color: transparent !important;
+
+      color: $grey !important;
+      font-size: 16px;
+
+      &:focus,
+      &:hover {
+        background-color: transparent;
+
+        color: $text-color !important;
+      }
+    }
+
+    &.is-active {
+      a {
+        padding: 5px;
+
+        color: $grey;
+        font-size: 16px;
+
+        &:focus,
+        &:hover,
+        &[aria-selected="true"] {
+          background-color: transparent !important;
+
+          color: $text-color !important;
+        }
+      }
+    }
+  }
+
+  &__small-title {
+    font-size: 14px;
+    line-height: 1.2;
+
+    margin-bottom: 17px;
+  }
+
+  &__pay-card {
+    margin-bottom: 30px;
+  }
+
+  &__btns {
+    display: flex;
+    gap: 35px;
+
+    &_padding-top {
+      padding-top: 23px;
+    }
+
+    &_float-right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__flex-pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__column-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  &_second {
+    #{$this} {
+      &__tabs-title {
+        &:not(.is-active) {
+          .main-form__tabs-link {
+            font-size: 0;
+          }
+        }
+      }
+
+      &__tabs {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+}

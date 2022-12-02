@@ -1,0 +1,33 @@
+.content-block {
+  p {
+    font-size: 14px;
+  }
+
+  a {
+    color: $third-color;
+    text-decoration: underline;
+  }
+
+  ul,
+  ol {
+    padding-left: 12px;
+  }
+
+  li {
+    position: relative;
+    padding-left: 17px;
+    margin-bottom: 7px;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: $black;
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.main-form-finaly {
+  display: flex;
+  align-items: center;
+  min-height: 558px;
+
+  @include breakpoint(small only) {
+    background-position: center;
+  }
+
+  @include breakpoint(medium) {
+    background: url("../../assets/img/main-form/success-bg.svg") no-repeat calc(50% + 371px) center;
+    background-size: auto 100%;
+
+    padding-bottom: 68px;
+  }
+
+  &__grid-container {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 24px;
+    text-align: left;
+    max-width: 324px;
+
+    margin-bottom: 26px;
+
+    @include breakpoint(medium) {
+      font-size: 36px;
+    }
+  }
+
+  &__title-up {
+    text-transform: uppercase;
+  }
+
+  &__small-title {
+    font-size: 14px;
+    color: $grey;
+
+    @include breakpoint(small only) {
+      margin-bottom: 20px;
+    }
+
+    @include breakpoint(medium) {
+      margin-bottom: 71px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__btn {
+    @include breakpoint(small only) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &_error-page {
+    @include breakpoint(medium) {
+      background: url("../../assets/img/main-form/error-bg.svg") no-repeat calc(50% + 371px) center;
+      background-size: auto 100%;
+    }
+  }
+}

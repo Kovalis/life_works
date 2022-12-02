@@ -1,0 +1,228 @@
+.header {
+  padding: 11px 0;
+  background: $white;
+  box-shadow: 0px 4px 15px rgba(49, 60, 72, 0.05);
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__lk {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(large down) {
+      font-size: 0px;
+      margin-left: 20px;
+    }
+
+    @include breakpoint(xlarge) {
+      font-size: 18px;
+      margin-left: 54px;
+    }
+  }
+
+  &__lk-img {
+    margin-left: 15px;
+  }
+
+  &__phone {
+    display: block;
+
+    @include breakpoint(small only) {
+      font-size: 16px;
+    }
+
+    @include breakpoint(medium only) {
+      font-size: 18px;
+    }
+
+    @include breakpoint(large) {
+      font-size: 24px;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__ul {
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint(large) {
+      display: flex;
+    }
+  }
+
+  &__li {
+    padding: 5px 0;
+    list-style: none;
+
+    @include breakpoint(medium down) {
+      margin-right: 20px;
+
+      &:not(:last-child) {
+        margin-right: 39px;
+      }
+    }
+
+    @include breakpoint(large) {
+      margin-right: 39px;
+
+      &:not(:last-child) {
+        margin-right: 59px;
+      }
+    }
+
+    &_select {
+      position: relative;
+
+      @include breakpoint(medium down) {
+        margin-right: 20px !important;
+      }
+
+      @include breakpoint(large) {
+        margin-right: 37px !important;
+      }
+
+      .header__link {
+        position: relative;
+        padding-right: 22px;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 12px;
+          height: 8px;
+          background: url(../../assets/img/menu-select.svg) no-repeat center;
+          background-size: 12px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__burger-line {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 22px;
+    background-color: $accent-color;
+    border-radius: 25px;
+    opacity: 1;
+    left: 3px;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+
+    &_first {
+      top: 5px;
+    }
+
+    &_second {
+      top: 13px;
+    }
+
+    &_third {
+      top: 21px;
+    }
+  }
+
+  &__burger {
+    position: relative;
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    display: block;
+    margin-right: 12px;
+
+    @include breakpoint(medium) {
+      margin-right: 27px;
+    }
+
+    &_active {
+      span {
+        &:nth-child(1) {
+          top: 13px;
+          -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+        }
+
+        &:nth-child(2) {
+          -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+        }
+
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+
+      &_text {
+        position: absolute;
+        left: 43px;
+        top: 18px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+// для mobile menu на мобильнике start
+.body-hide {
+  overflow: hidden;
+  position: relative;
+}
+html {
+  &.active {
+    height: auto;
+    overflow: auto;
+  }
+}
+// для mobile menu на мобильнике end
+
+.main-menu {
+  &_active {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    z-index: 900;
+    overflow: auto;
+    min-height: calc(100vh - 80px);
+    background-color: $white;
+
+    @include breakpoint(small only) {
+    }
+
+    @include breakpoint(medium down) {
+      .main-menu__wrap {
+        padding: 16px;
+      }
+    }
+
+    @include breakpoint(medium only) {
+      height: calc(100vh - 91px);
+    }
+  }
+}

@@ -1,0 +1,287 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__grow {
+    flex-grow: 1;
+  }
+
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__footer {
+    margin-top: 30px;
+  }
+}
+
+.grid-container {
+  &_narrow {
+    @include breakpoint(large) {
+      max-width: 800px;
+    }
+  }
+}
+
+.link-mark {
+  position: absolute;
+  right: 0;
+  top: -11px;
+  background-color: $red;
+  border-radius: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  line-height: 1;
+  padding: 2px 7px;
+}
+
+.logo {
+  display: block;
+
+  @include breakpoint(small only) {
+    max-width: 40px;
+  }
+}
+
+.soc-block {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    @include flex-center;
+    align-items: center;
+    flex-shrink: 0;
+
+    background-color: $white;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+
+    margin-bottom: 20px;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__img {
+    max-width: 22px;
+    max-height: 22px;
+  }
+}
+
+.price-wrap {
+  @include flex-center;
+  align-items: center;
+  gap: 15px;
+
+  &:not(&_row) {
+    flex-direction: column;
+  }
+}
+
+.short-text-form {
+  font-size: 18px;
+
+  color: $text-color;
+}
+
+.price-count {
+  font-size: 24px;
+
+  color: $text-color;
+}
+
+.pay-wrap {
+  @include flex-center;
+  flex-direction: column;
+  gap: 26px;
+
+  width: 100%;
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__btn {
+    @include flex-center;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: $white;
+
+    padding: 5px;
+    min-height: 50px;
+
+    background-color: $black;
+    border-radius: 4px;
+  }
+}
+
+.pay-wallet {
+  @include flex-center;
+  align-items: center;
+  gap: 19px;
+
+  &__item {
+    @include flex-center;
+    align-items: center;
+
+    background-color: $wallet-bg;
+    border-radius: 10px;
+
+    min-width: 102px;
+    min-height: 68px;
+
+    padding: 5px;
+  }
+}
+
+.pays-info {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+
+  padding-top: 60px;
+  padding-bottom: 32px;
+}
+
+.cards-info {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+
+  &__list {
+    display: flex;
+    gap: 6px;
+  }
+}
+
+.form-error {
+  margin-top: 0;
+  padding-top: 5px;
+
+  &_show {
+    display: block;
+  }
+}
+
+.slider {
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+  background-color: $text-color;
+  border-radius: 10px;
+
+  height: 4px;
+}
+.slider-fill {
+  background-color: $third-color;
+  border-radius: 10px 0 0 10px;
+
+  height: 4px;
+}
+
+.slider-handle {
+  background-color: $third-color;
+  border-radius: 40px;
+  border: 1px solid $accent-color;
+
+  width: 10px;
+  height: 10px;
+}
+
+.slider-range-count {
+  display: flex;
+  justify-content: flex-start;
+
+  &__number {
+    pointer-events: none;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    font-weight: 600;
+    font-size: 16px;
+    color: $text-color;
+    position: relative;
+    width: 29px;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &::after {
+    content: "%";
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: $text-color;
+  }
+
+  &_money {
+    &::after {
+      content: "₽";
+    }
+  }
+}
+
+.advantage-info {
+  display: grid;
+  grid-gap: 30px;
+
+  padding-bottom: 20px;
+
+  @include breakpoint(medium down) {
+    grid-template-columns: 1fr;
+  }
+
+  @include breakpoint(large) {
+    padding-left: 98px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__title {
+    color: $text-color;
+    font-size: 16px;
+  }
+
+  &__text {
+    color: $grey;
+    font-size: 14px;
+
+    & p {
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    & li {
+      position: relative;
+      padding-left: 30px;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: 8px;
+
+        width: 6px;
+        height: 6px;
+
+        background-color: $grey;
+        border-radius: 6px;
+      }
+    }
+  }
+}

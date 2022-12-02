@@ -1,0 +1,67 @@
+.insurance-case {
+  padding: 54px 0 26px;
+
+  &__row {
+    border: none;
+
+    @include breakpoint(medium) {
+      display: grid;
+      grid-gap: 28px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    padding: 18px;
+    border: 1px solid $second-color;
+    color: $black !important;
+    background-color: $white !important;
+    box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
+    border-radius: 20px;
+    min-height: 165px;
+    text-align: center;
+    margin-bottom: 28px;
+    transition: border-color 0.3s, box-shadow 0.3s, margin 0.3s, padding 0.3s, min-height 0.3s;
+
+    &:hover {
+      border-color: $accent-color;
+      box-shadow: -2px 7px 18px -5px rgba(48, 45, 38, 0.3);
+      margin-left: -7.5px;
+      margin-top: -7.5px;
+      margin-right: -7.5px;
+      margin-bottom: 20.5px;
+      padding: 25px 26px;
+      min-height: 180px;
+    }
+  }
+
+  &__item-img {
+    min-height: 63px;
+    margin-bottom: 20px;
+  }
+
+  &__item-title {
+    font-size: 14px;
+  }
+
+  &__tabs {
+    min-height: 230px;
+  }
+
+  &__tab {
+    padding: 35px;
+    background-color: $white;
+    box-shadow: 0px 2px 18px rgba(41, 41, 41, 0.1);
+    border-radius: 13px;
+
+    &.is-active {
+      display: inline-block;
+    }
+  }
+
+  &__phone {
+    color: $black !important;
+    font-size: 24px;
+    text-decoration: none !important;
+  }
+}

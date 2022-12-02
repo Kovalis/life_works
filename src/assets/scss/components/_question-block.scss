@@ -1,0 +1,63 @@
+.question-block {
+  padding: 49px 0;
+  $el: &;
+
+  &__link,
+  &__accordion-text {
+    display: block;
+
+    border-radius: 10px;
+    background-color: $white;
+    font-size: 18px;
+    line-height: 1.22 !important;
+
+    @include breakpoint(small only) {
+      padding: 20px !important;
+    }
+
+    @include breakpoint(medium) {
+      padding: 20px 145px 20px 100px !important;
+    }
+  }
+
+  &__link {
+    position: relative;
+    z-index: 2;
+    min-height: 85px;
+    transition: margin-bottom 0.3s;
+
+    @include breakpoint(medium) {
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 33px;
+        top: 32px;
+        width: 35px;
+        height: 1px;
+        background-color: $black;
+      }
+
+      &:after {
+        right: 62px !important;
+      }
+    }
+  }
+
+  &__accordion-text {
+    padding-top: 38px !important;
+  }
+
+  [aria-expanded="true"] {
+    #{$el} {
+      &__link {
+        box-shadow: 2px 2px 5px rgba(20, 29, 61, 0.15), -2px -2px 5px rgba(20, 29, 61, 0.15);
+        margin-bottom: -10px !important;
+      }
+
+      &__accordion-text {
+        box-shadow: inset 0px 0px 13px rgba(20, 29, 61, 0.08);
+      }
+    }
+  }
+}
