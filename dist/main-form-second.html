@@ -1,0 +1,1289 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/css/app.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="main__header header">
+  <div class="grid-container">
+    <div class="header__wrap">
+      <div class="header__flex">
+        <div
+          class="header__menu hide-for-large"
+          data-responsive-toggle="example-menu"
+          data-hide-for="large"
+        >
+          <button class="header__burger js-header__burger" type="button" data-toggle="example-menu">
+            <span class="header__burger-line header__burger-line_first"></span>
+            <span class="header__burger-line header__burger-line_second"></span>
+            <span class="header__burger-line header__burger-line_third"></span>
+          </button>
+        </div>
+        <img class="logo" src="assets/img/logo.svg" alt="" width="53px" height="58px" />
+      </div>
+      <div class="header__flex">
+        <nav class="main-menu">
+          <div class="main-menu__wrap" id="example-menu">
+            <ul class="header__ul dropdown" data-dropdown-menu>
+              <li class="header__li"><a class="header__link" href="#">Главная</a></li>
+              <li class="header__li"><a class="header__link" href="#">О нас</a></li>
+              <li class="header__li header__li_select">
+                <a class="header__link" href="#">Помощь</a>
+                <ul class="menu">
+                  <li><a href="#">Item 1A</a></li>
+                </ul>
+              </li>
+              <li class="header__li header__li_select">
+                <a class="header__link" href="#">Санкт-Петербург</a>
+                <ul class="menu">
+                  <li><a href="#">Item 2A</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a class="header__phone" href="tel:+7 495 967 13 01">+7 495 967 13 01</a>
+        <a class="header__lk" href="#"
+          >Личный кабинет<img
+            class="header__lk-img"
+            src="assets/img/lk.svg"
+            alt=""
+            width="28px"
+            height="28px"
+        /></a>
+      </div>
+    </div>
+  </div>
+</header>
+ <section class="main-form main-form_second">
+  <div class="grid-container">
+    <ol
+      class="main-form__tabs tabs"
+      data-deep-link="true"
+      data-update-history="true"
+      data-deep-link-smudge="true"
+      data-deep-link-smudge-delay="500"
+      data-tabs
+      id="deeplinked-tabs"
+    >
+      <li class="main-form__tabs-title tabs-title is-active">
+        <a class="main-form__tabs-link" href="#panel1d" aria-selected="true"
+          >Контактная информация</a
+        >
+        <ul
+          class="main-form__inner-tabs tabs"
+          data-deep-link="true"
+          data-update-history="true"
+          data-deep-link-smudge="true"
+          data-deep-link-smudge-delay="500"
+          data-tabs
+          id="deeplinked-tabs2"
+        >
+          <li class="main-form__tabs-title-inner tabs-title is-active">
+            <a href="#panel1d2" aria-selected="true">1/1</a>
+          </li>
+          <li class="main-form__tabs-title-inner tabs-title">
+            <a href="#panel2d2">1/2</a>
+          </li>
+          <li class="main-form__tabs-title-inner tabs-title"><a href="#panel3d2">1/3</a></li>
+          <li class="main-form__tabs-title-inner tabs-title"><a href="#panel4d2">1/4</a></li>
+        </ul>
+        <div class="main-form__track-inner"></div>
+      </li>
+      <li class="main-form__tabs-title tabs-title">
+        <a class="main-form__tabs-link" href="#panel2d">Застрахованые лица</a>
+        <div class="main-form__track-inner"></div>
+      </li>
+      <li class="main-form__tabs-title tabs-title">
+        <a class="main-form__tabs-link" href="#panel3d">Выгодоприобретатель</a>
+        <div class="main-form__track-inner"></div>
+      </li>
+      <li class="main-form__tabs-title tabs-title">
+        <a class="main-form__tabs-link" href="#panel4d">Страховое покрытие</a>
+        <div class="main-form__track-inner"></div>
+      </li>
+      <li class="main-form__tabs-title tabs-title">
+        <a class="main-form__tabs-link" href="#panel5d">Оплата</a>
+        <div class="main-form__track-inner"></div>
+      </li>
+    </ol>
+    <div class="main-form__track"></div>
+    <form action="" id="main-form" data-abide novalidate>
+      <div class="tabs-content" data-tabs-content="deeplinked-tabs">
+        <div class="main-form__tab tabs-panel is-active" id="panel1d">
+          <div class="tabs-content" data-tabs-content="deeplinked-tabs2">
+            <div class="main-form__tab tabs-panel is-active" id="panel1d2">
+              <div class="main-form__title">Страхователь</div>
+              <div class="main-form__container">
+                <div
+                  class="main-form__col-wrap main-form__col-wrap_center main-form__col-wrap_margin"
+                >
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Фамилия</span>
+                    <input
+                      type="text"
+                      required
+                      aria-describedby="exampleError"
+                      aria-errormessage="example1Error1"
+                    />
+                    <span class="form-error" data-form-error-on="required" id="exampleError">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Имя</span>
+                    <input type="text" required aria-describedby="exampleError2" />
+                    <span class="form-error" data-form-error-on="required" id="exampleError2">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Отчество</span>
+                    <input type="text" required aria-describedby="exampleError3" />
+                    <span class="form-error" data-form-error-on="required" id="exampleError3">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Место рождения</span>
+                    <input type="text" required aria-describedby="exampleError4" />
+                    <span class="form-error" data-form-error-on="required" id="exampleError4">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Дата рождения</span>
+                    <input type="date" required aria-describedby="exampleError5" />
+                    <span class="form-error" data-form-error-on="required" id="exampleError5">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="radio" id="man" name="gender" checked />
+                    <label for="man">Мужщина</label>
+                    <input type="radio" id="woman" name="gender" />
+                    <label for="woman">Женщина</label>
+                  </div>
+                </div>
+                <button class="main-btn main-btn_center js-next-tab">Далее</button>
+              </div>
+            </div>
+            <div class="main-form__tab tabs-panel" id="panel2d2">
+              <div class="main-form__title">Паспортные данные</div>
+              <div class="main-form__container">
+                <div
+                  class="main-form__col-wrap main-form__col-wrap_center main-form__col-wrap_margin"
+                >
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Гражданство</span>
+                    <input type="text" required placeholder="Россия" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Документ, удоставеряющий личность</span>
+                    <input type="text" required placeholder="Тип документа" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="number" required placeholder="Серия" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="number" required placeholder="Номер" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Орган, выдавший документ</span>
+                    <input type="text" required placeholder="Кем выдан" />
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Дата выдачи</span>
+                    <input type="date" required placeholder="дд.мм.гггг" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Номер миграционной карты</span>
+                    <input type="number" required placeholder="Серия" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="number" required placeholder="Номер" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Срок пребывания до</span>
+                    <input type="date" required placeholder="дд.мм.гггг" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                </div>
+                <div class="main-form__btns">
+                  <button class="main-btn js-prev-tab">Назад</button>
+                  <button class="main-btn js-next-tab">Далее</button>
+                </div>
+              </div>
+            </div>
+            <div class="main-form__tab tabs-panel" id="panel3d2">
+              <div class="main-form__title">Адрес регистрации</div>
+              <div class="main-form__container">
+                <div
+                  class="main-form__col-wrap main-form__col-wrap_center main-form__col-wrap_margin"
+                >
+                  <div class="main-form-item">
+                    <span class="main-form-item__title"
+                      >Адрес регистрации Страхователя на территории РФ</span
+                    >
+                    <input type="text" required placeholder="Страна" required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="text" required placeholder="Город, село,П.Г.Т." required />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="text" required placeholder="Район" />
+                  </div>
+                  <div class="main-form-item">
+                    <input type="number" required placeholder="Индекс" />
+                  </div>
+                  <div class="main-form-item">
+                    <input type="text" required placeholder="Улица" />
+                  </div>
+                  <div class="main-form-item">
+                    <input type="number" required placeholder="Корпус" />
+                  </div>
+                  <div class="main-form-item">
+                    <input type="text" required placeholder="Дом" />
+                  </div>
+                  <div class="main-form-item">
+                    <input type="number" required placeholder="Квартира" />
+                  </div>
+                  <div class="main-form-item main-form__checkbox-group">
+                    <input type="radio" id="adres-agree" name="adres" />
+                    <label class="main-form__checkbox" for="adres-agree"
+                      >Адрес для корреспонденции совпадает с адресом регистрации</label
+                    >
+                    <input type="radio" id="adres-disagree" name="adres" />
+                    <label class="main-form__checkbox" for="adres-disagree"
+                      >Адрес для корреспонденции НЕ совпадает с адресом регистрации</label
+                    >
+                  </div>
+                </div>
+                <div class="main-form__btns">
+                  <button class="main-btn js-prev-tab">Назад</button>
+                  <button class="main-btn js-next-tab">Далее</button>
+                </div>
+              </div>
+            </div>
+            <div class="main-form__tab tabs-panel" id="panel4d2">
+              <div class="main-form__title">Информация</div>
+              <div class="main-form__container">
+                <div
+                  class="main-form__col-wrap main-form__col-wrap_center main-form__col-wrap_margin"
+                >
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Карта клиента</span>
+                    <input type="number" required placeholder="Серия" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="number" required placeholder="Номер" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form__checkbox">
+                    <input type="checkbox" id="check-agree" name="check-agree" />
+                    <label for="check-agree"
+                      >Даю согласие на получение уведомлений от Страховщика посредством SMS и(или)
+                      E-mail</label
+                    >
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Телефон</span>
+                    <input
+                      class="js-phone-mask"
+                      type="text"
+                      required
+                      placeholder="+7(___)___-__-__"
+                    />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">E-mail</span>
+                    <input
+                      class="js-email-mask"
+                      type="text"
+                      required
+                      placeholder="mail@example.ru"
+                    />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                </div>
+                <div class="main-form__btns">
+                  <button class="main-btn js-prev-tab">Назад</button>
+                  <button class="main-btn js-next-tab">Далее</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-form__tab tabs-panel" id="panel2d">
+          <div class="main-form__title">Застрахованые лица</div>
+          <div class="main-form__container main-form__container_wide">
+            <div class="main-form__col-wrap main-form__col-wrap_center main-form__col-wrap_margin">
+              <div class="main-form-item">
+                <span class="main-form-item__title">Фамилия</span>
+                <input type="text" required placeholder="Иванов" />
+                <span class="form-error" data-form-error-on="required">
+                  Это поле обязательно для заполнения
+                </span>
+              </div>
+              <div class="main-form-item">
+                <span class="main-form-item__title">Имя</span>
+                <input type="text" required placeholder="Иван" />
+                <span class="form-error" data-form-error-on="required">
+                  Это поле обязательно для заполнения
+                </span>
+              </div>
+              <div class="main-form-item">
+                <span class="main-form-item__title">Отчество</span>
+                <input type="text" required placeholder="Иванович" />
+                <span class="form-error" data-form-error-on="required">
+                  Это поле обязательно для заполнения
+                </span>
+              </div>
+              <div class="main-form-item">
+                <span class="main-form-item__title">Степень родства со Страхователем</span>
+                <input type="text" required placeholder="Например: ребенок" />
+                <span class="form-error" data-form-error-on="required">
+                  Это поле обязательно для заполнения
+                </span>
+              </div>
+              <div class="main-form-item">
+                <span class="main-form-item__title">Место рождения</span>
+                <input type="text" required placeholder="Например: Москва" />
+                <span class="form-error" data-form-error-on="required">
+                  Это поле обязательно для заполнения
+                </span>
+              </div>
+              <div class="main-form-item">
+                <span class="main-form-item__title">Дата рождения</span>
+                <input type="date" required placeholder="дд.мм.гггг" />
+                <span class="form-error" data-form-error-on="required">
+                  Это поле обязательно для заполнения
+                </span>
+              </div>
+              <div class="main-form-item">
+                <input type="radio" id="man2" name="gender2" checked />
+                <label for="man2">Мужщина</label>
+                <input type="radio" id="woman2" name="gender2" />
+                <label for="woman2">Женщина</label>
+              </div>
+            </div>
+            <div class="main-form__col-wrap_center">
+              <div class="main-form__col-wrap main-form__col-wrap_right main-form__col-wrap_margin">
+                <div class="main-form-item">
+                  <span class="main-form-item__title">Гражданство</span>
+                  <input type="text" required placeholder="Например: Россия" />
+                  <span class="form-error" data-form-error-on="required">
+                    Это поле обязательно для заполнения
+                  </span>
+                </div>
+                <div class="main-form-item">
+                  <span class="main-form-item__title">Документ, удоставеряющий личность</span>
+                  <input type="text" required placeholder="Тип документа" />
+                  <span class="form-error" data-form-error-on="required">
+                    Это поле обязательно для заполнения
+                  </span>
+                </div>
+                <div class="main-form-item">
+                  <input type="number" required placeholder="Серия" />
+                  <span class="form-error" data-form-error-on="required">
+                    Это поле обязательно для заполнения
+                  </span>
+                </div>
+                <div class="main-form-item">
+                  <input type="number" required placeholder="Номер" />
+                  <span class="form-error" data-form-error-on="required">
+                    Это поле обязательно для заполнения
+                  </span>
+                </div>
+                <div class="main-form-item">
+                  <span class="main-form-item__title">Орган, выдавший документ</span>
+                  <input type="text" required placeholder="Кем выдан" />
+                  <span class="form-error" data-form-error-on="required">
+                    Это поле обязательно для заполнения
+                  </span>
+                </div>
+                <div class="main-form-item">
+                  <span class="main-form-item__title">Дата выдачи</span>
+                  <input type="date" required placeholder="дд.мм.гггг" />
+                  <span class="form-error" data-form-error-on="required">
+                    Это поле обязательно для заполнения
+                  </span>
+                </div>
+              </div>
+              <div class="main-form__btns main-form__btns_padding-top">
+                <button class="main-btn js-prev-tab">Назад</button>
+                <button class="main-btn js-next-tab">Далее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-form__tab tabs-panel" id="panel3d">
+          <div class="main-form__title">Выгодоприобретатель</div>
+          <div class="main-form__middle-title">
+            по риску:<br />
+            “Смерть Застрахованного лица (Страхователя) в результате несчастного случая”
+          </div>
+          <div class="main-form__container main-form__container_wide">
+            <ol
+              class="tabs main-form__tabs main-form__tabs_vertical"
+              data-deep-link="true"
+              data-update-history="true"
+              data-deep-link-smudge="true"
+              data-deep-link-smudge-delay="500"
+              data-tabs="utobzb-tabs"
+              id="deeplinked3-tabs"
+              role="tablist"
+            >
+              <li class="main-form__tabs-title tabs-title is-active">
+                <a class="main-form__tabs-link" href="#panel3-1d" aria-selected="true"></a>
+                <div class="main-form__track-inner"></div>
+              </li>
+              <li class="main-form__tabs-title tabs-title">
+                <a class="main-form__tabs-link" href="#panel3-2d"></a>
+                <div class="main-form__track-inner"></div>
+              </li>
+            </ol>
+            <div class="tabs-content tabs-content_flex-grow" data-tabs-content="deeplinked3-tabs">
+              <div class="main-form__tab tabs-panel is-active" id="panel3-1d">
+                <div
+                  class="main-form__col-wrap main-form__col-wrap_center main-form__col-wrap_margin"
+                >
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Фамилия</span>
+                    <input type="text" required placeholder="Иванов" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Имя</span>
+                    <input type="text" required placeholder="Иван" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Отчество</span>
+                    <input type="text" required placeholder="Иванович" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Степень родства со Страхователем</span>
+                    <input type="text" required placeholder="Например: ребенок" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Место рождения</span>
+                    <input type="text" required placeholder="Например: Москва" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Дата рождения</span>
+                    <input type="date" required placeholder="дд.мм.гггг" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="radio" id="man3" name="gender3" checked />
+                    <label for="man3">Мужщина</label>
+                    <input type="radio" id="woman3" name="gender3" />
+                    <label for="woman3">Женщина</label>
+                  </div>
+                </div>
+                <div class="main-form__col-wrap_center">
+                  <div
+                    class="main-form__col-wrap main-form__col-wrap_right main-form__col-wrap_margin"
+                  >
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Гражданство</span>
+                      <input type="text" required placeholder="Например: Россия" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Документ, удоставеряющий личность</span>
+                      <input type="text" required placeholder="Тип документа" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <input type="number" required placeholder="Серия" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <input type="number" required placeholder="Номер" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Орган, выдавший документ</span>
+                      <input type="text" required placeholder="Кем выдан" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Дата выдачи</span>
+                      <input type="date" required placeholder="дд.мм.гггг" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Доля страховой суммы</span>
+                      <div class="slider-range-count">
+                        <input
+                          class="slider-range-count__number"
+                          type="number"
+                          id="sliderOutput1"
+                        />
+                      </div>
+                      <div class="slider" data-slider data-initial-start="50">
+                        <span
+                          class="slider-handle"
+                          data-slider-handle
+                          role="slider"
+                          tabindex="1"
+                          aria-controls="sliderOutput1"
+                        ></span>
+                        <span class="slider-fill" data-slider-fill></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="main-btn main-btn_align-center main-btn_flex-grow">
+                    Добавить еще<svg
+                      class="main-btn__img"
+                      viewBox="0 0 24 24"
+                      width="24px"
+                      height="24px"
+                    >
+                      <use xlink:href="assets/img/main-form/add.svg#svg"></use>
+                    </svg>
+                  </button>
+                  <div class="main-form__btns main-form__btns_padding-top">
+                    <button class="main-btn js-prev-tab">Назад</button>
+                    <button class="main-btn js-next-tab">Далее</button>
+                  </div>
+                </div>
+              </div>
+              <div class="main-form__tab tabs-panel" id="panel3-2d">
+                <div
+                  class="main-form__col-wrap main-form__col-wrap_center main-form__col-wrap_margin"
+                >
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Фамилия</span>
+                    <input type="text" required placeholder="Иванов" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Имя</span>
+                    <input type="text" required placeholder="Иван" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Отчество</span>
+                    <input type="text" required placeholder="Иванович" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Степень родства со Страхователем</span>
+                    <input type="text" required placeholder="Например: ребенок" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Место рождения</span>
+                    <input type="text" required placeholder="Например: Москва" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <span class="main-form-item__title">Дата рождения</span>
+                    <input type="date" required placeholder="дд.мм.гггг" />
+                    <span class="form-error" data-form-error-on="required">
+                      Это поле обязательно для заполнения
+                    </span>
+                  </div>
+                  <div class="main-form-item">
+                    <input type="radio" id="man3" name="gender3" checked />
+                    <label for="man3">Мужщина</label>
+                    <input type="radio" id="woman3" name="gender3" />
+                    <label for="woman3">Женщина</label>
+                  </div>
+                </div>
+                <div class="main-form__col-wrap_center">
+                  <div
+                    class="main-form__col-wrap main-form__col-wrap_right main-form__col-wrap_margin"
+                  >
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Гражданство</span>
+                      <input type="text" required placeholder="Например: Россия" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Документ, удоставеряющий личность</span>
+                      <input type="text" required placeholder="Тип документа" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <input type="number" required placeholder="Серия" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <input type="number" required placeholder="Номер" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Орган, выдавший документ</span>
+                      <input type="text" required placeholder="Кем выдан" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Дата выдачи</span>
+                      <input type="date" required placeholder="дд.мм.гггг" />
+                      <span class="form-error" data-form-error-on="required">
+                        Это поле обязательно для заполнения
+                      </span>
+                    </div>
+                    <div class="main-form-item">
+                      <span class="main-form-item__title">Доля страховой суммы</span>
+                      <div class="slider-range-count">
+                        <input
+                          class="slider-range-count__number"
+                          type="number"
+                          id="sliderOutput1"
+                        />
+                      </div>
+                      <div class="slider" data-slider data-initial-start="50">
+                        <span
+                          class="slider-handle"
+                          data-slider-handle
+                          role="slider"
+                          tabindex="1"
+                          aria-controls="sliderOutput1"
+                        ></span>
+                        <span class="slider-fill" data-slider-fill></span>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="main-btn main-btn_align-center main-btn_flex-grow">
+                    Добавить еще<svg
+                      class="main-btn__img"
+                      viewBox="0 0 24 24"
+                      width="24px"
+                      height="24px"
+                    >
+                      <use xlink:href="assets/img/main-form/add.svg#svg"></use>
+                    </svg>
+                  </button>
+                  <div class="main-form__btns main-form__btns_padding-top">
+                    <button class="main-btn js-prev-tab">Назад</button>
+                    <button class="main-btn js-next-tab">Далее</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-form__tab tabs-panel" id="panel4d">
+          <div class="main-form__title">Страховое покрытие</div>
+          <div class="main-form__container main-form__container_wide main-form__container_block">
+            <div class="main-form__title-inner-tab">
+              Страховые риски <img src="assets/img/main-form/error_outline.svg" alt="" />
+            </div>
+            <div class="main-form__advantage-wrap">
+              <div class="main-form__title-small-inner-tab">
+                <img
+                  class="main-form__title-small-inner-tab-img"
+                  src="assets/img/main-form/shield.svg"
+                  alt=""
+                />
+                Основная программа
+              </div>
+              <div class="advantage-info">
+                <div class="advantage-info__title">Дожитие Застрахованного лица</div>
+                <div class="main-form-item">
+                  <div class="slider-range-count slider-range-count_money">
+                    <input class="slider-range-count__number" type="number" id="sliderAdvantage" />
+                  </div>
+                  <div class="slider" data-slider data-initial-start="50">
+                    <span
+                      class="slider-handle"
+                      data-slider-handle
+                      role="slider"
+                      tabindex="1"
+                      aria-controls="sliderAdvantage"
+                    ></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                  </div>
+                </div>
+                <div class="advantage-info__text">Выплата 100% от страховой суммы</div>
+              </div>
+              <div class="advantage-info">
+                <div class="advantage-info__title">
+                  Смерть Застрахованного лица по любой причине
+                </div>
+                <div class="main-form-item">
+                  <div class="slider-range-count slider-range-count_money">
+                    <input class="slider-range-count__number" type="number" id="sliderAdvantage2" />
+                  </div>
+                  <div class="slider" data-slider data-initial-start="50">
+                    <span
+                      class="slider-handle"
+                      data-slider-handle
+                      role="slider"
+                      tabindex="1"
+                      aria-controls="sliderAdvantage2"
+                    ></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                  </div>
+                </div>
+                <div class="advantage-info__text">Выплата в размере уплаченных взносов и ДИД</div>
+              </div>
+              <div class="advantage-info">
+                <div class="advantage-info__title">
+                  Смерть Застрахованного лица в результате несчастного случая
+                </div>
+                <div class="main-form-item">
+                  <div class="slider-range-count slider-range-count_money">
+                    <input class="slider-range-count__number" type="number" id="sliderAdvantage3" />
+                  </div>
+                  <div class="slider" data-slider data-initial-start="50">
+                    <span
+                      class="slider-handle"
+                      data-slider-handle
+                      role="slider"
+                      tabindex="1"
+                      aria-controls="sliderAdvantage3"
+                    ></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                  </div>
+                </div>
+                <div class="advantage-info__text">Выплата 100% от страховой суммы</div>
+              </div>
+              <div class="advantage-info">
+                <div class="advantage-info__title">
+                  Инвалидность Застрахованного лица в результате несчастного случая
+                </div>
+                <div class="main-form-item">
+                  <div class="slider-range-count slider-range-count_money">
+                    <input class="slider-range-count__number" type="number" id="sliderAdvantage4" />
+                  </div>
+                  <div class="slider" data-slider data-initial-start="50">
+                    <span
+                      class="slider-handle"
+                      data-slider-handle
+                      role="slider"
+                      tabindex="1"
+                      aria-controls="sliderAdvantage4"
+                    ></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                  </div>
+                </div>
+                <div class="advantage-info__text">
+                  <p>Размер выплаты от страховой суммы:</p>
+                  <ul>
+                    <li>
+                      I группа инвалидности или категория «ребенок-инвалид до достижения возраста 18
+                      лет» - 100%;
+                    </li>
+                    <li>
+                      II группа инвалидности или категория «ребенок-инвалид сроком на два года» -
+                      75%;
+                    </li>
+                    <li>
+                      III группа инвалидности или категория «ребенок-инвалид сроком на один год» -
+                      50%
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-form__advantage-wrap">
+              <div class="main-form__title-small-inner-tab">
+                <img
+                  class="main-form__title-small-inner-tab-img"
+                  src="assets/img/main-form/dop-info.svg"
+                  alt=""
+                />
+                Дополнительные программы
+              </div>
+              <div class="advantage-info">
+                <div class="advantage-info__title">
+                  Госпитализация Застрахованного лица в результате несчастного случая
+                </div>
+                <div class="main-form-item">
+                  <div class="slider-range-count slider-range-count_money">
+                    <input class="slider-range-count__number" type="number" id="sliderAdvantage5" />
+                  </div>
+                  <div class="slider" data-slider data-initial-start="50">
+                    <span
+                      class="slider-handle"
+                      data-slider-handle
+                      role="slider"
+                      tabindex="1"
+                      aria-controls="sliderAdvantage5"
+                    ></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                  </div>
+                </div>
+                <div class="advantage-info__text">
+                  Выплата в размере 0,2 % от страховой суммы за каждый день госпитализации, но не
+                  более 30 дней по каждому страховому случаю
+                </div>
+              </div>
+              <div class="advantage-info">
+                <div class="advantage-info__title">
+                  Госпитализация Застрахованного (Страхователя) лица в результате несчастного случая
+                </div>
+                <div class="main-form-item">
+                  <div class="slider-range-count slider-range-count_money">
+                    <input class="slider-range-count__number" type="number" id="sliderAdvantage6" />
+                  </div>
+                  <div class="slider" data-slider data-initial-start="50">
+                    <span
+                      class="slider-handle"
+                      data-slider-handle
+                      role="slider"
+                      tabindex="1"
+                      aria-controls="sliderAdvantage6"
+                    ></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                  </div>
+                </div>
+                <div class="advantage-info__text">
+                  Выплата в размере 0,2 % от страховой суммы за каждый день госпитализации, но не
+                  более 30 дней по каждому страховому случаю
+                </div>
+              </div>
+              <div class="advantage-info">
+                <div class="advantage-info__title">
+                  Смерть Застрахованного (Страхователя) лица в результате несчастного случая
+                </div>
+                <div class="main-form-item">
+                  <div class="slider-range-count slider-range-count_money">
+                    <input class="slider-range-count__number" type="number" id="sliderAdvantage7" />
+                  </div>
+                  <div class="slider" data-slider data-initial-start="50">
+                    <span
+                      class="slider-handle"
+                      data-slider-handle
+                      role="slider"
+                      tabindex="1"
+                      aria-controls="sliderAdvantage7"
+                    ></span>
+                    <span class="slider-fill" data-slider-fill></span>
+                  </div>
+                </div>
+                <div class="advantage-info__text">Выплата 100% от страховой суммы</div>
+              </div>
+            </div>
+            <div class="main-form__advantage-wrap">
+              <div class="advantage-info">
+                <div class="main-form__title-small-inner-tab">
+                  <img
+                    class="main-form__title-small-inner-tab-img"
+                    src="assets/img/main-form/rub.svg"
+                    alt=""
+                  />
+                  Общий размер страхового взноса
+                </div>
+                <div class="main-form-item">
+                  <div class="slider-range-count slider-range-count_money">
+                    <input
+                      class="slider-range-count__number"
+                      type="number"
+                      id="sliderAdvantage5"
+                      max="100"
+                      min="0"
+                      step="1"
+                    />
+                  </div>
+                  <div class="slider" data-slider="0xz1xi-slider" data-initial-start="50">
+                    <span
+                      class="slider-handle"
+                      data-slider-handle=""
+                      role="slider"
+                      tabindex="0"
+                      aria-controls="sliderAdvantage5"
+                      aria-valuemax="100"
+                      aria-valuemin="0"
+                      aria-valuenow="50"
+                      aria-orientation="horizontal"
+                      style="left: 50%"
+                    ></span>
+                    <span class="slider-fill" data-slider-fill="" style="width: 50%"></span>
+                  </div>
+                </div>
+                <div></div>
+              </div>
+            </div>
+            <div class="main-form__title-small-inner-tab-text">
+              Добровольное условие для тех, кто выбрал дополнительные программы «Смерть
+              Застрахованного лица (Страхователя) в результате несчастного случая» и «Освобождение
+              от уплаты страховых взносов»
+            </div>
+            <div class="main-form__checkbox">
+              <input type="checkbox" id="check-agree2" name="check-agree2" />
+              <label for="check-agree2"
+                >УСЛОВИЕ «Отсроченная выплата»: Отметка в данном пункте означает, что Страхователь
+                согласен (согласна) с тем, что если при наступлении страхового случая по риску
+                «Смерть Застрахованного лица (Страхователя) в результате несчастного случая»
+                в договоре страхования также действовала дополнительная программа «Освобождение
+                от уплаты страховых взносов», то согласно п. 16.6 Условий страхования жизни
+                по страховому продукту «НАДЕЖНОЕ БУДУЩЕЕ ДЕТЯМ» страховая выплата в размере,
+                установленном по риску «Смерть Застрахованного лица (Страхователя) в результате
+                несчастного случая», перечисляется дополнительно к страховым взносам по риску
+                «Дожитие Застрахованного лица», тем самым размер страховой суммы по риску «Дожитие
+                Застрахованного лица» увеличивается и подлежит страховой выплате в соответствии с п.
+                16.1. Условий страхования жизни по страховому продукту «НАДЕЖНОЕ БУДУЩЕЕ ДЕТЯМ». При
+                отсутствии отметки, страховая выплата по риску «Смерть Застрахованного лица
+                (Страхователя) в результате несчастного случая» будет произведена Выгодопробретателю
+                или наследникам.</label
+              >
+            </div>
+            <div class="main-form__btns main-form__btns_padding-top main-form__btns_float-right">
+              <button class="main-btn js-prev-tab">Назад</button>
+              <button class="main-btn js-next-tab">Далее</button>
+            </div>
+          </div>
+        </div>
+        <div class="main-form__tab tabs-panel" id="panel5d">
+          <div class="main-form__title">Оплата</div>
+          <div class="main-form__container main-form__container_narrow">
+            <div class="price-wrap price-wrap_row">
+              <div class="short-text-form">Сумма к оплате:</div>
+              <div class="price-count">7 750 ₽</div>
+            </div>
+            <div class="pays-info">
+              <div class="pay-wrap">
+                <div class="pay-wrap__btn">
+                  <img
+                    src="assets/img/main-form/apple.svg"
+                    alt="apple"
+                    width="62px"
+                    height="24px"
+                  />
+                </div>
+                <div class="pay-wrap__btn">
+                  Buy with
+                  <img
+                    src="assets/img/main-form/google-pay.svg"
+                    alt="google-pay"
+                    width="69px"
+                    height="28px"
+                  />
+                </div>
+              </div>
+              <div class="pay-wallet">
+                <div class="pay-wallet__item">
+                  <img
+                    src="assets/img/main-form/yandex-wallet.svg"
+                    alt="yandex"
+                    width="49px"
+                    height="42px"
+                  />
+                </div>
+                <div class="pay-wallet__item">
+                  <img
+                    src="assets/img/main-form/qiwi-wallet.svg"
+                    alt="qiwi"
+                    width="50px"
+                    height="51px"
+                  />
+                </div>
+              </div>
+              <div class="cards-info">
+                <div class="short-text-form">Банковской картой</div>
+                <div class="cards-info__list">
+                  <img
+                    src="assets/img/main-form/cards/mir.svg"
+                    alt="mir"
+                    width="24px"
+                    height="16px"
+                  />
+                  <img
+                    src="assets/img/main-form/cards/visa.svg"
+                    alt="mir"
+                    width="24px"
+                    height="16px"
+                  />
+                  <img
+                    src="assets/img/main-form/cards/mastercard.svg"
+                    alt="mir"
+                    width="24px"
+                    height="16px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="main-form__pay-card pay-card">
+              <div class="main-form-item">
+                <input type="text" required placeholder="Номер карты" />
+                <span class="form-error" data-form-error-on="required">
+                  Это поле обязательно для заполнения
+                </span>
+              </div>
+              <div class="pay-card__half-path">
+                <div class="main-form-item">
+                  <input type="text" required placeholder="мм/гг" />
+                  <span class="form-error" data-form-error-on="required">
+                    Это поле обязательно для заполнения
+                  </span>
+                </div>
+                <div class="main-form-item">
+                  <input type="text" required placeholder="CVC" />
+                  <span class="form-error" data-form-error-on="required">
+                    Это поле обязательно для заполнения
+                  </span>
+                </div>
+              </div>
+              <div class="main-form-item">
+                <input type="text" required placeholder="Имя и Фамилия владельца" />
+                <span class="form-error" data-form-error-on="required">
+                  Это поле обязательно для заполнения
+                </span>
+              </div>
+            </div>
+            <div class="main-form__col-wrap main-form__col-wrap_center main-form__col-wrap_margin">
+              <div class="main-form__small-title">
+                Чтобы получить квитацию, укажите, пожалуйста, ваш E-mail
+              </div>
+              <div class="main-form-item">
+                <span class="main-form-item__title">E-mail</span>
+                <input class="js-email-mask" type="text" required placeholder="mail@example.ru" />
+              </div>
+              <div class="main-form__checkbox-list">
+                <input
+                  class="js-checked-all-checkbox"
+                  type="checkbox"
+                  id="check-all"
+                  name="check-all"
+                />
+                <label for="check-all">Выбрать всё</label>
+                <input type="checkbox" id="check-all2" name="check-all" required />
+                <label for="check-all2"
+                  >Заявляю, что изучил(а), понял(а) и согласен (согласна) с условиями страхования.
+                  «Правила добровольного страхования граждан от несчастных случаев и болезней»,
+                  утвержденные Приказом № 14/01/20-1/ОД от 20.01.2014 г. (далее – Правила),в
+                  редакции от19.02.19 г. (Приказ № 19/02/19-01/ОД), Страховую программу «НС ПЛЮС»
+                  (Приложение №13 к Правилам), копию настоящего Заявления на страхование, карту
+                  клиента, получил(а).</label
+                >
+                <input type="checkbox" id="check-all3" name="check-all" required />
+                <label for="check-all3"
+                  >Cогласен (согласна) с тем, что Страховщик вправе использовать факсимильное
+                  воспроизведение печати и подписи Страховщика способом механического или иного
+                  копирования, в том числе с помощью компьютерных программ.</label
+                >
+                <input type="checkbox" id="check-all4" name="check-all" required />
+                <label for="check-all4"
+                  >Даю согласие на отправление Договора страхования на мой персональный электронный
+                  почтовый ящик, указанный в настоящем Заявлении на страхование.</label
+                >
+                <input type="checkbox" id="check-all5" name="check-all" required />
+                <label for="check-all5"
+                  >Прошу заключить Договор страхования на указанных в настоящем Заявлении на
+                  страхование условиях. Указанные условия страхования размещены на сайте Страховщика
+                  - https://prolife.ru/ в разделе «Правила страхования и тарифы».</label
+                >
+              </div>
+            </div>
+            <div class="main-form__flex-pay">
+              <div class="price-wrap">
+                <div class="short-text-form">Сумма к оплате:</div>
+                <div class="price-count">7 750 ₽</div>
+              </div>
+              <div class="main-form__column-btns">
+                <button class="main-btn">Оплатить</button>
+                <a href="#" class="main-link js-prev-tab">Назад</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+      <div class="main__grow"></div>
+      <footer class="main__footer footer">
+        <div class="footer__top">
+          <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+              <div class="medium-3 cell">
+                <ul>
+                  <li class="footer__li"><a class="footer__link" href="#">Главная</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">О нас</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Новости</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Спецпредложения</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Бизнес предлодения</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Твое будущее</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Защита себя и близких</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Защита сотрудников</a></li>
+                </ul>
+              </div>
+              <div class="medium-3 cell">
+                <ul>
+                  <li class="footer__li"><a class="footer__link" href="#">Страховая документация</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Финансовые показатели</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Контакты</a></li>
+                  <li class="footer__li"><a class="footer__link" href="#">Карта сайта</a></li>
+                </ul>
+              </div>
+              <div class="medium-6 cell">
+                <div class="grid-x grid-padding-x">
+                  <div class="large-6 cell">
+                    <div class="footer__item footer__text">
+                      125252, г. Москва,<br />
+                      ул. Зорге, д. 22 А, офис 811
+                    </div>
+                    <div class="footer__item footer__text">
+                      График работы главного офиса<br />
+                      125252, г. Москва,<br />
+                      ул. Зорге, д. 22 А, офис 811<br />
+                      Пн. - Чт. с 9:00 до 18:00<br />
+                      Пт. с 9:00 до 16:45<br />
+                      Сб-Вс выходной
+                    </div>
+                  </div>
+                  <div class="large-6 cell">
+                    <div class="footer__item footer__text">
+                      Адрес для почтовых отправлений: 125252, г. Москва, а/я 28
+                    </div>
+                    <a href="tel:+7 495 967 13 01" class="footer__item footer__phone">
+                      тел.: +7 495 967 13 01</a
+                    >
+                    <div class="footer__email">
+                      Email для связи с нами<br /><a
+                        class="footer__email-link"
+                        href="mailto:info@prolife.ru"
+                        >info@prolife.ru</a
+                      >
+                    </div>
+                  </div>
+                  <div class="large-6 cell">
+                    <a href="#" class="main-btn main-btn_flex-grow">Как добраться</a>
+                  </div>
+                  <div class="large-6 cell">
+                    <div class="footer__soc soc-block">
+                      <a href="#" class="soc-block__item">
+                        <img class="soc-block__img" src="assets/img/soc-block/vk.svg" alt="" />
+                      </a>
+                      <a href="#" class="soc-block__item">
+                        <img class="soc-block__img" src="assets/img/soc-block/tg.svg" alt="" />
+                      </a>
+                      <a href="#" class="soc-block__item">
+                        <img class="soc-block__img" src="assets/img/soc-block/fb.svg" alt="" />
+                      </a>
+                      <a href="#" class="soc-block__item">
+                        <img class="soc-block__img" src="assets/img/soc-block/inst.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="grid-container">
+            <p class="footer__bottom-text">
+              © 1998 – 2021 ООО СК "ДЕЛО ЖИЗНИ". Все права защищены. Полное или частичное копирование
+              любых материалов сайта запрещено. ООО СК «ДЕЛО ЖИЗНИ» осуществляет свою деятельность на
+              основании лицензий ЦБ РФ:СЖ № 3870 от 24.03.2017СЛ № 3870 от 24.03.2017 Органом,
+              осуществляющим полномочия по контролю и надзору за ООО СК «ДЕЛО ЖИЗНИ» является Банк России.
+              Адрес официального сайта Банк России - www.cbr.ru.
+            </p>
+          </div>
+        </div>
+      </footer>
+      
+      <div class="reveal" id="exampleModal1" data-reveal>
+        <p>
+          Отправляя обращение, Вы соглашаетесь на обработку ваших персональных данных в соответсвии с
+          требованиями Федерального закона от 27.07.2006 №152-ФЗ “О персональных данных”
+        </p>
+        <button class="main-btn" data-close aria-label="Close modal" type="button">Закрыть</button>
+      </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
